@@ -40,3 +40,18 @@ class Cat extends Animal {
 }
 
 const cat = new Cat()
+//=====
+
+abstract class Component {
+    abstract render(): void
+    abstract info(): string
+}
+class AppComponent extends Component {
+    render(): void {
+        console.log('component on render')
+    }
+
+    info(): string {
+        return 'this is info';
+    }
+}
